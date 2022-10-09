@@ -24,6 +24,6 @@ mkdir -p /aligner/data/model
 echo -e "\n2. MFA train alignment"
 
 
-mfa train -t ./temp --clean --phone_set PINYIN --output_model_path /aligner/data/model/freest.zip  -j 10 /aligner/data/mfa_inputs pinyin-lexicon_tab.txt /aligner/data/mfa_outputs
+mfa train -t ./temp --clean --phone_set PINYIN --output_model_path $PWD/data/model/freest  -j 10 $PWD/data/mfa_inputs pinyin-lexicon_with_tab.txt $PWD/data/mfa_outputs
 rm -rf temp
 

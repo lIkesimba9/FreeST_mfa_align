@@ -15,5 +15,5 @@ docker build --rm --tag aligner .
 docker run --rm -it -v $(pwd):/aligner aligner
 ```
 
-Processed data will be located at `data/processed/mfa_outputs` (as `.TextGrid`, grouped by speaker IDs) and `data/processed/mels` (as `.pkl`, grouped by speaker IDs).
+Processed data will be located at `data/mfa_outputs` (as `.TextGrid`, grouped by speaker IDs) and model will be alocated at `data/model`.
 
